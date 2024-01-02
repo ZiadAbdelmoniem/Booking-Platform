@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoring Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Tutoring Platform</h1>
+    <label for="promptInput">Enter your preferences:</label>
+    <input type="text" id="promptInput" placeholder="e.g., I would like to learn mathematics for grade 11 twice a week...">
+    <button id="submitButton" onclick="getTutorList()">Submit</button>
+    <div id="loadingSpinner" class="hidden"></div>
+    <div id="tutorList"></div>
+    <button id="bookButton" onclick="bookTutors()" class="hidden">Add To Favorites</button>
+    <button id="cancelButton" onclick="cancelBooking()" class="hidden">Cancel</button>
+  </div>
+
+  <script src="frontend.js"></script>
+</body>
+</html>
